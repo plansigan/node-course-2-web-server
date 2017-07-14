@@ -43,6 +43,14 @@ app.get('/about',(req,res) => {
   })
 })
 
+app.get('/project',(req,res)=>{
+  res.render('project',{
+    pageTitle:'Projects page',
+    welcomeMessage:'This is the project page',
+    currentYear:new Date().getFullYear()
+  })
+})
+
 app.get('/home',(req,res)=>{
   res.render('home',{
     pageTitle:'Home Page',
